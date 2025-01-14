@@ -1,4 +1,5 @@
 #!/bin/bash
+# Script utilizado no vídeo https://www.youtube.com/watch?v=sw22wVQ1Dr4
 # Comandos iniciais
 # git clone https://github.com/HackersHiveClub/exemplo
 # cd demo
