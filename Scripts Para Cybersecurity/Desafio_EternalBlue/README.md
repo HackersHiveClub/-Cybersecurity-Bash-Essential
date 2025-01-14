@@ -1,3 +1,26 @@
+# **Tarefa de Aula: Verificando Vulnerabilidade ao EternalBlue com Nmap**
+## **Objetivo**
+
+Nesta tarefa, você deverá usar o Nmap em um shell script para identificar a vulnerabilidade EternalBlue (MS17-010) em um servidor.  
+
+### **Requisitos**
+
+1.  **Um ambiente seguro para testes:**
+    
+    -   Uma máquina virtual configurada como alvo, que esteja vulnerável ao EternalBlue. Por exemplo:
+        -   Instale e configure uma VM Windows 7 SP1 ou Windows Server 2008 (sem os patches de segurança aplicados).
+        -   Um script foi criado para deixar a maquina vulnerável [https://github.com/HackersHiveClub/Cybersecurity-Bash-Essential/tree/650814f8493e21a29eeeddce0e29927870d7b021/Scripts%20Para%20Cybersecurity/Desafio_EternalBlue](https://github.com/HackersHiveClub/Cybersecurity-Bash-Essential/tree/650814f8493e21a29eeeddce0e29927870d7b021/Scripts%20Para%20Cybersecurity/Desafio_EternalBlue)
+    -   Outra máquina com Linux (como Kali Linux)
+2.  **Ferramentas e configurações necessárias:**
+    
+    -   **Nmap** instalado:
+        -   No Linux: Use o comando sudo apt update && sudo apt install nmap.
+        -   Conectividade de rede entre a máquina de ataque e a máquina-alvo (mesma rede ou usando adaptadores preferenciamento em Bridge para VMs).
+3.  **Conhecimentos prévios:**
+    
+    -   Fundamentos de redes (endereço IP, portas).
+    -   Noções básicas de segurança e vulnerabilidades.  
+
 ## Passo a Passo para o Desafio
 
 ### 1. Executar o Nmap Diretamente
