@@ -2,7 +2,8 @@
 
 ### 1. Executar o Nmap Diretamente
 
-Antes de criar o script, execute o comando do Nmap diretamente no terminal para testar. Substitua `<endereço_IP>` pelo IP do servidor que você deseja testar:
+Antes de criar o script, execute o comando do Nmap diretamente no terminal para 
+testar. Substitua `<endereço_IP>` pelo IP do servidor que você deseja testar:
 
 `nmap --script smb-vuln-ms17-010 -p 445 <endereço_IP>` 
 
@@ -32,10 +33,10 @@ Agora, vamos tornar o script mais robusto adicionando validações.
 1.  **Verifique se o Nmap está instalado:** Adicione uma validação para confirmar se o Nmap está instalado no sistema antes de tentar usá-lo.
    
    
-`if ! command -v nmap &>/dev/null; then` 
-  `      echo "Erro: Nmap não está instalado."` 
-    `    exit 1` 
-    `fi` 
+`if ! command -v nmap &>/dev/null; then`   
+  `      echo "Erro: Nmap não está instalado."`  
+    `    exit 1`   
+    `fi`   
     
 2.  **Valide se o endereço IP foi fornecido:** Adicione uma verificação para garantir que o usuário forneça um endereço IP como argumento ao script.
     
