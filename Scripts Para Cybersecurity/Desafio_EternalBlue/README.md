@@ -41,10 +41,10 @@ Agora, vamos tornar o script mais robusto adicionando validações.
 2.  **Valide se o endereço IP foi fornecido:** Adicione uma verificação para garantir que o usuário forneça um endereço IP como argumento ao script.
     
    
-   `if [ -z "$1" ]; then` 
-   `     echo "Uso: $0 <endereço_IP>"` 
-        `exit 1` 
-    `fi` 
+   `if [ -z "$1" ]; then`   
+   `     echo "Uso: $0 <endereço_IP>"`   
+        `exit 1`   
+    `fi`   
     
 
 ----------
@@ -61,12 +61,12 @@ Agora que o script básico funciona, vamos aprimorá-lo.
 2.  **Valide o resultado da varredura:** Verifique se a execução do Nmap foi bem-sucedida e mostre uma mensagem apropriada.
     
     
-    `nmap --script smb-vuln-ms17-010 -p 445 $1` 
-   `  if [ $? -eq 0 ]; then` 
-    `     echo "Varredura concluída. Verifique os resultados acima."` 
-    ` else` 
-     `    echo "Erro ao executar a varredura. Tente novamente."` 
-   `  fi` 
+    `nmap --script smb-vuln-ms17-010 -p 445 $1`   
+   `  if [ $? -eq 0 ]; then`   
+    `     echo "Varredura concluída. Verifique os resultados acima."`     
+    ` else`   
+     `    echo "Erro ao executar a varredura. Tente novamente."`   
+   `  fi`   
     
 
 ----------
@@ -113,10 +113,10 @@ Para alunos que desejam um desafio maior, considere:
 2.  **Suporte a múltiplos IPs:** Modifique o script para aceitar vários IPs como argumentos e realizar a varredura em todos eles.
     
     
-    `for ip in "$@"; do`
-    `     echo "Verificando $ip..."`
-  `       nmap --script smb-vuln-ms17-010 -p 445 $ip`
- `    done` 
+    `for ip in "$@"; do`  
+    `     echo "Verificando $ip..."`  
+  `       nmap --script smb-vuln-ms17-010 -p 445 $ip`  
+ `    done`   
     
 
 ----------
