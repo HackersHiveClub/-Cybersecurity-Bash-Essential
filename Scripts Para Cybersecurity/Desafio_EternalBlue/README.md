@@ -1,4 +1,13 @@
+
+# Fluxo Para criação do Script
+
+1.  **Início:** Execute o comando Nmap manualmente para entender seu funcionamento.
+2.  **Intermediário:** Crie um script básico sem validações.
+3.  **Avançado:** Aprimore o script com validações, suporte a múltiplos IPs e opções para salvar os resultados.
+
+
 # **Tarefa de Aula: Verificando Vulnerabilidade ao EternalBlue com Nmap**
+
 ## **Objetivo**
 
 Nesta tarefa, você deverá usar o Nmap em um shell script para identificar a vulnerabilidade EternalBlue (MS17-010) em um servidor.  
@@ -143,9 +152,3 @@ Para alunos que desejam um desafio maior, considere:
     
 
 ----------
-
-### Exemplo de Fluxo Didático
-
-1.  **Início:** Execute o comando Nmap manualmente para entender seu funcionamento.
-2.  **Intermediário:** Crie um script básico sem validações.
-3.  **Avançado:** Aprimore o script com validações, suporte a múltiplos IPs e opções para salvar os resultados.
